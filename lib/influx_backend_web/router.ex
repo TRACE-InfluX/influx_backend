@@ -2,7 +2,6 @@ defmodule InfluxBackendWeb.Router do
   use InfluxBackendWeb, :router
 
   pipeline :api do
-    plug CORSPlug, origin: "*"
     plug :accepts, ["json"]
   end
 

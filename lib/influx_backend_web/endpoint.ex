@@ -40,5 +40,6 @@ defmodule InfluxBackendWeb.Endpoint do
     key: "_influx_backend_key",
     signing_salt: "QIic8rFV"
 
+  plug CORSPlug, origin: "*"
   plug InfluxBackendWeb.Router
 end
