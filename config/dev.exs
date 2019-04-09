@@ -54,3 +54,5 @@ config :influx_backend, InfluxBackend.Repo,
   database: "influx_backend_dev",
   hostname: "localhost",
   pool_size: 10
+
+  import_config "dev.secret.exs"
